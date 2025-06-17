@@ -1,0 +1,8 @@
+--- src/xsane-save.h	2023-06-16 12:00:00.000000000 +0000
++++ src/xsane-save.h	2023-06-16 12:05:00.000000000 +0000
+@@ -52,3 +52,3 @@
+-extern void xsane_cancel_save();
++extern void xsane_cancel_save(int *cancel_save);
+ extern void xsane_convert_text_to_filename(char **filename);
+ extern int xsane_get_filesize(char *filename);
+
