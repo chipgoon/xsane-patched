@@ -14,7 +14,7 @@ arch=(x86_64)
 url="https://github.com/chipgoon/xsane-patched"
 license=('GPL2')
 makedepends=('gtk2' 'lcms2' 'sane' 'zlib' 'libjpeg' 'gimp')
-source=(http://http.debian.net/debian/pool/main/x/$pkgname/${pkgname}_$pkgver.orig.tar.gz
+source=(http://http.debian.net/debian/pool/main/x/xsane/xsane_$pkgver.orig.tar.gz
 	xsane-0.995-xdg-open.patch
 	0165-xsane-0.999-lcms2.patch
 	0001-lcms2_configure.patch
@@ -62,7 +62,7 @@ build() {
   make
 }
 
-package_xsane() {
+package_xsane-patched() {
   pkgdesc="A GTK-based X11 frontend for SANE and plugin for Gimp."
   install=$pkgname.install
   depends=('gtk2' 'lcms2' 'sane' 'zlib' 'libjpeg')  

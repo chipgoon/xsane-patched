@@ -1,7 +1,7 @@
 pkgbase = xsane
 	pkgver = 0.999
-	pkgrel = 7
-	url = https://gitlab.com/sane-project/frontend/xsane
+	pkgrel = 1
+	url = https://github.com/chipgoon/xsane-patched
 	arch = x86_64
 	license = GPL2
 	makedepends = gtk2
@@ -25,17 +25,12 @@ pkgbase = xsane
 	sha512sums = 04ea857a34a9400bc7c030563a942309d106893c6314dd099bf053227672fca9879314015be912538a7f89a414d3f0a24e7f45bfc51a0b621ed27dcc1c91a4e8
 	sha512sums = 1eef9d7c917761062c4819dc2d8e77b37b76ee71d94585ff05f7a0219d041a621b478f9aba0249eada9c612a2faa65251d57287467667ec75a68c264fde8d185
 
-pkgname = xsane
+pkgname = xsane-patched
 	pkgdesc = A GTK-based X11 frontend for SANE and plugin for Gimp.
-	install = xsane.install
+	install = xsane-patched.install
 	depends = gtk2
 	depends = lcms2
 	depends = sane
 	depends = zlib
 	depends = libjpeg
 	optdepends = xsane-gimp: for gimp plugin support
-
-pkgname = xsane-gimp
-	pkgdesc = XSane Gimp plugin
-	depends = xsane
-	depends = gimp
