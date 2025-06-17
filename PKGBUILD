@@ -1,4 +1,5 @@
-# Maintainer : Peter Theobald <dev@petertheobald.de>
+# Maintainer: chipgoon <43668166+chipgoon@users.noreply.github.com>
+# Contributor : Peter Theobald <dev@petertheobald.de>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Sarah Hay <sarahhay@mb.sympatico.ca>
 #
@@ -6,11 +7,11 @@
 
 
 pkgbase=xsane
-pkgname=('xsane' 'xsane-gimp')
+pkgname=('xsane-patched')
 pkgver=0.999
-pkgrel=7
+pkgrel=1
 arch=(x86_64)
-url="https://gitlab.com/sane-project/frontend/xsane"
+url="https://github.com/chipgoon/xsane-patched"
 license=('GPL2')
 makedepends=('gtk2' 'lcms2' 'sane' 'zlib' 'libjpeg' 'gimp')
 source=(http://http.debian.net/debian/pool/main/x/$pkgname/${pkgname}_$pkgver.orig.tar.gz
