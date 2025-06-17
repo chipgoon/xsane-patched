@@ -14,7 +14,7 @@ arch=(x86_64)
 url="https://github.com/chipgoon/xsane-patched"
 license=('GPL2')
 makedepends=('gtk2' 'lcms2' 'sane' 'zlib' 'libjpeg' 'gimp')
-source=(http://http.debian.net/debian/pool/main/x/xsane/xsane_$pkgver.orig.tar.gz
+source=(http://http.debian.net/debian/pool/main/x/$pkgbase/$pkgbase_$pkgver.orig.tar.gz
 	xsane-0.995-xdg-open.patch
 	0165-xsane-0.999-lcms2.patch
 	0001-lcms2_configure.patch
@@ -32,7 +32,7 @@ sha512sums=('73ec961fce1a86b5d6f5bac0995d222785eb4b077dc8e72492b092d2bf450045542
 )
 
 prepare() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd "$srcdir/$pkgbase-$pkgver"
   # fix use "xdg-open" instead of "netscape" to launch help browser - taken from Fedora
   patch -Np1 -i "${srcdir}/xsane-0.995-xdg-open.patch"
   sed -i -e 's:png_ptr->jmpbuf:png_jmpbuf(png_ptr):' src/xsane-save.c
